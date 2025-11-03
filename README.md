@@ -43,7 +43,7 @@ Slow progress | Accelerated learning guidance
 - Frontend: React / Next.js / Tailwind 
 - Backend: Node.js / Python 
 - AI: LLM + custom prompt pipeline
-- Storage: Firebase / Supabase 
+- Storage: ORM (Object Relational Mapping) / ODM Object Data Mapping 
 
 ---
 
