@@ -1,0 +1,13 @@
+.page{
+  background: #FFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.title {
+  font-size: 1rem;
+  font:bold;
+  color: black;
+}
