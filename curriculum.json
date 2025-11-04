@@ -1,0 +1,425 @@
+[
+  {
+    "track_id": "python",
+    "name": "Python Development",
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Getting Started with Python",
+        "lessons": [
+          {
+            "lesson_id": "py_1",
+            "title": "Introduction to Python",
+            "objective": "Understand what Python is and why it's used.",
+            "content": [
+              "Python is a high-level, interpreted language.",
+              "It's used in web development, data science, and AI.",
+              "It’s known for its clean and beginner-friendly syntax."
+            ],
+            "code_examples": [
+              "print('Hello, World!')",
+              "name = input('Enter your name: ')\nprint('Hello', name)"
+            ],
+            "tasks": [
+              "Install Python and VS Code.",
+              "Run your first Python file.",
+              "Print a personalized message."
+            ]
+          },
+          {
+            "lesson_id": "py_2",
+            "title": "Variables and Data Types",
+            "objective": "Learn how to store and work with different data types.",
+            "content": [
+              "Variables store values.",
+              "Python has int, float, str, bool types.",
+              "Dynamic typing means no need to declare type."
+            ],
+            "code_examples": [
+              "age = 25",
+              "name = 'Ada'",
+              "pi = 3.14",
+              "is_human = True"
+            ],
+            "tasks": [
+              "Create variables for your details.",
+              "Use type() to check their types."
+            ]
+          },
+          {
+            "lesson_id": "py_3",
+            "title": "Basic Operations",
+            "objective": "Learn how to use basic operators in Python.",
+            "content": [
+              "Python supports arithmetic, comparison, and logical operators.",
+              "Operators are used to perform operations on variables and values."
+            ],
+            "code_examples": [
+              "a = 10\nb = 5\nprint(a + b)",
+              "print(a > b)",
+              "print(a == b)"
+            ],
+            "tasks": [
+              "Try different arithmetic operations.",
+              "Compare two numbers using comparison operators.",
+              "Practice logical operators with conditions."
+            ]
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Control Flow and Functions",
+        "lessons": [
+          {
+            "lesson_id": "py_4",
+            "title": "If-Else Statements",
+            "objective": "Learn how to use conditional statements.",
+            "content": [
+              "If statements allow you to run code only when a condition is true.",
+              "Else runs code when the condition is false."
+            ],
+            "code_examples": [
+              "num = 10\nif num > 5:\n    print('Greater')\nelse:\n    print('Smaller')"
+            ],
+            "tasks": [
+              "Write an if-else program.",
+              "Check whether a number is even or odd."
+            ]
+          },
+          {
+            "lesson_id": "py_5",
+            "title": "Loops",
+            "objective": "Learn about for and while loops in Python.",
+            "content": [
+              "Loops help you repeat actions without writing code multiple times.",
+              "Python has for and while loops."
+            ],
+            "code_examples": [
+              "for i in range(5):\n    print(i)",
+              "count = 0\nwhile count < 5:\n    print(count)\n    count += 1"
+            ],
+            "tasks": [
+              "Create a loop to print numbers 1 to 10.",
+              "Use a while loop to print even numbers."
+            ]
+          },
+          {
+            "lesson_id": "py_6",
+            "title": "Functions",
+            "objective": "Learn how to define and call functions.",
+            "content": [
+              "Functions let you organize and reuse code.",
+              "Use def keyword to define a function."
+            ],
+            "code_examples": [
+              "def greet(name):\n    print(f'Hello {name}')\n\ngreet('Tavra')"
+            ],
+            "tasks": [
+              "Create a function that prints a greeting.",
+              "Write a function that adds two numbers."
+            ]
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Data Structures",
+        "lessons": [
+          {
+            "lesson_id": "py_7",
+            "title": "Lists and Tuples",
+            "objective": "Learn how to work with lists and tuples.",
+            "content": [
+              "Lists are mutable collections.",
+              "Tuples are immutable collections."
+            ],
+            "code_examples": [
+              "fruits = ['apple', 'banana', 'orange']",
+              "numbers = (1, 2, 3)"
+            ],
+            "tasks": [
+              "Create a list of 5 items.",
+              "Access and modify elements in the list."
+            ]
+          },
+          {
+            "lesson_id": "py_8",
+            "title": "Dictionaries and Sets",
+            "objective": "Understand dictionaries and sets in Python.",
+            "content": [
+              "Dictionaries store key-value pairs.",
+              "Sets store unique elements."
+            ],
+            "code_examples": [
+              "person = {'name': 'Ada', 'age': 25}",
+              "unique_numbers = {1, 2, 3}"
+            ],
+            "tasks": [
+              "Create a dictionary of personal info.",
+              "Create a set and add/remove elements."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "track_id": "frontend",
+    "name": "Frontend Development",
+    "weeks": [
+      {
+        "week": 1,
+        "title": "HTML Basics",
+        "lessons": [
+          {
+            "lesson_id": "fe_1",
+            "title": "Introduction to Frontend",
+            "objective": "Understand what frontend development is and tools used.",
+            "content": [
+              "Frontend development deals with the visual part of a website.",
+              "Technologies include HTML, CSS, and JavaScript."
+            ],
+            "code_examples": [
+              "<h1>Hello World</h1>",
+              "<p>This is my first website!</p>"
+            ],
+            "tasks": [
+              "Install a code editor (like VS Code).",
+              "Create a basic HTML file.",
+              "Write and open it in a browser."
+            ]
+          },
+          {
+            "lesson_id": "fe_2",
+            "title": "Basic HTML Structure",
+            "objective": "Learn the basic structure of an HTML page.",
+            "content": [
+              "HTML stands for HyperText Markup Language.",
+              "It provides the structure for web pages."
+            ],
+            "code_examples": [
+              "<!DOCTYPE html>",
+              "<html>",
+              "<head><title>My First Page</title></head>",
+              "<body><h1>Hello World!</h1></body>",
+              "</html>"
+            ],
+            "tasks": [
+              "Create a new HTML page.",
+              "Add a heading and a paragraph.",
+              "View it in a browser."
+            ]
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "CSS Fundamentals",
+        "lessons": [
+          {
+            "lesson_id": "fe_3",
+            "title": "Introduction to CSS",
+            "objective": "Learn how to style HTML elements.",
+            "content": [
+              "CSS adds style and layout to web pages.",
+              "It can be inline, internal, or external."
+            ],
+            "code_examples": [
+              "<style>h1 { color: blue; }</style>",
+              "h1 { font-size: 24px; }"
+            ],
+            "tasks": [
+              "Change the color of text using CSS.",
+              "Add background color to your page."
+            ]
+          },
+          {
+            "lesson_id": "fe_4",
+            "title": "Selectors and Properties",
+            "objective": "Understand CSS selectors and common properties.",
+            "content": [
+              "Selectors target HTML elements.",
+              "Properties define styles for those elements."
+            ],
+            "code_examples": [
+              "p { color: red; }",
+              "div { background-color: yellow; }"
+            ],
+            "tasks": [
+              "Style paragraphs and divs differently.",
+              "Experiment with margins and padding."
+            ]
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "JavaScript Basics",
+        "lessons": [
+          {
+            "lesson_id": "fe_5",
+            "title": "Introduction to JavaScript",
+            "objective": "Learn what JavaScript is and how to use it.",
+            "content": [
+              "JavaScript adds interactivity to web pages.",
+              "It runs in the browser."
+            ],
+            "code_examples": [
+              "<script>console.log('Hello JS');</script>"
+            ],
+            "tasks": [
+              "Add a script to your HTML page.",
+              "Print a message in the browser console."
+            ]
+          },
+          {
+            "lesson_id": "fe_6",
+            "title": "Variables and Functions",
+            "objective": "Learn how to use variables and functions in JS.",
+            "content": [
+              "Use let, const to declare variables.",
+              "Functions group reusable code."
+            ],
+            "code_examples": [
+              "let name = 'John';",
+              "function greet(){ alert('Hello ' + name); }"
+            ],
+            "tasks": [
+              "Create a function to greet a user.",
+              "Change the value of a variable and print it."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "track_id": "ai-ml",
+    "name": "AI & Machine Learning",
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Getting Started with AI/ML",
+        "lessons": [
+          {
+            "lesson_id": "ai_1",
+            "title": "Introduction to AI and ML",
+            "objective": "Understand what AI and ML are and why they matter.",
+            "content": [
+              "AI is the simulation of human intelligence in machines.",
+              "ML is a subset of AI that enables systems to learn from data.",
+              "AI/ML powers applications like recommendation systems and chatbots."
+            ],
+            "code_examples": [
+              "# No coding yet — just concepts"
+            ],
+            "tasks": [
+              "Understand the difference between AI and ML.",
+              "List 3 real-life applications of AI.",
+              "Install Python if not installed."
+            ]
+          },
+          {
+            "lesson_id": "ai_2",
+            "title": "Environment Setup",
+            "objective": "Set up tools needed for AI/ML development.",
+            "content": [
+              "Install Python, Jupyter Notebook, and essential libraries.",
+              "We'll use NumPy, Pandas, and Matplotlib."
+            ],
+            "code_examples": [
+              "pip install numpy pandas matplotlib jupyter"
+            ],
+            "tasks": [
+              "Install Python and Jupyter Notebook.",
+              "Install required libraries.",
+              "Open Jupyter Notebook."
+            ]
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Python for Data",
+        "lessons": [
+          {
+            "lesson_id": "ai_3",
+            "title": "NumPy Basics",
+            "objective": "Learn how to work with numerical data using NumPy.",
+            "content": [
+              "NumPy is used for numerical computations.",
+              "It provides powerful array operations."
+            ],
+            "code_examples": [
+              "import numpy as np\narr = np.array([1,2,3])\nprint(arr)"
+            ],
+            "tasks": [
+              "Install NumPy.",
+              "Create a NumPy array.",
+              "Practice basic operations."
+            ]
+          },
+          {
+            "lesson_id": "ai_4",
+            "title": "Pandas Basics",
+            "objective": "Work with structured data using Pandas.",
+            "content": [
+              "Pandas provides Series and DataFrame structures.",
+              "It's widely used in data analysis."
+            ],
+            "code_examples": [
+              "import pandas as pd\ndf = pd.DataFrame({'Name':['Ada','John'],'Age':[25,30]})\nprint(df)"
+            ],
+            "tasks": [
+              "Create a simple DataFrame.",
+              "Read a CSV file if possible.",
+              "Access columns and rows."
+            ]
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Intro to Machine Learning",
+        "lessons": [
+          {
+            "lesson_id": "ai_5",
+            "title": "Understanding Machine Learning",
+            "objective": "Understand how ML works conceptually.",
+            "content": [
+              "ML learns patterns from data.",
+              "You train a model and make predictions."
+            ],
+            "code_examples": [
+              "# Concept explanation, code comes later."
+            ],
+            "tasks": [
+              "Explain what training and testing mean.",
+              "List some popular ML algorithms."
+            ]
+          },
+          {
+            "lesson_id": "ai_6",
+            "title": "Scikit-Learn Setup",
+            "objective": "Install and explore Scikit-Learn.",
+            "content": [
+              "Scikit-Learn is a popular ML library.",
+              "It makes building models easier."
+            ],
+            "code_examples": [
+              "pip install scikit-learn",
+              "from sklearn.linear_model import LinearRegression"
+            ],
+            "tasks": [
+              "Install scikit-learn.",
+              "Import LinearRegression.",
+              "Confirm installation."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
+
