@@ -2,7 +2,7 @@ import React from 'react'
 
 const MeetDTeam = () => {
   return (
-    <div>MeetDTeam</div>
+    <div>Meet the Team behind the project</div>
   )
 }
 
