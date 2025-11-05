@@ -2,7 +2,7 @@ import React from 'react'
 
 const Doucmentation = () => {
   return (
-    <div>Doucmentations about the AI</div>
+    <div className='text-4xl font-bold justify-center items-center text-center'>Doucmentations about the AI</div>
   )
 }
 
