@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default function LandingLayout({
   children,
@@ -5,8 +7,10 @@ export default function LandingLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section style={{ padding: "2rem" }}>
-      {children}
+    <section >
+      <Navbar />
+       {children}
+      <Footer />
     </section>
   );
 }
