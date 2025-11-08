@@ -2,5 +2,22 @@
 .footer{
   background: linear-gradient(135deg, #B5E48C, #99D98C, #D9ED92);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 
+  .footerContainer{
+    padding: 8em 4em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction:row;
+  }
+  .footerLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    font-size: 1.5em;
+  }
 }
