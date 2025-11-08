@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Homepage = () => {
   return (
-    <div className='h-screen background text-[#fde7cc]'>
+    <div className='h-[150vh] background text-[#fde7cc]'>
       <div className='pt-40 px-10'>
         <h1 className='text-[8em] BigFont'>MEET TAVRA AI</h1>
        <div className="perspective">

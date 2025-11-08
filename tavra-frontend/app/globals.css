@@ -11,7 +11,7 @@
   font-family: 'BigFont', sans-serif;
 }
 
-//phone tilt animation
+/* phone tilt animation */ 
 
 .perspective {
   perspective: 1200px;

@@ -1,6 +1,6 @@
 // app/layout.tsx
-// @ts-ignore: allow importing global scss as side-effect without type declarations
-import './globals.scss';
+// @ts-ignore: allow importing global css as side-effect without type declarations
+import './globals.css';
 import { ReactNode } from "react";
 
 export const metadata = {

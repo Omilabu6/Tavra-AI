@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Footer.module.scss'
 
 const Footer = () => {
   return (
-    <div>
+    <div className={styles.footer}>
       <div>
         <h1>TAVRA AI</h1>
         <h2>Start your journey with tavra today. The future of learning begins now.</h2>
