@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'BigFont';
+  src: url('/fonts/AldotheApache.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.BigFont {
+  font-family: 'BigFont', sans-serif;
+}
+
+//phone tilt animation
+
+.perspective {
+  perspective: 1200px;
+}
+
+.phoneContainer {
+  position: relative;
+  margin-left: 20%;
+  margin-top: -10%;
+  display: inline-block;
+  transform: rotateX(29deg) rotateZ(-55deg) rotateY(2deg);
+ transform-style: preserve-3d;
+
+}
+.background{
+background: linear-gradient(135deg, #0f0f10 0%, #1c1c24 40%, #0a0a0d 100%);
+
+}

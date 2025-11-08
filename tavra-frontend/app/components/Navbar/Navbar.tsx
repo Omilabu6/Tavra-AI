@@ -9,10 +9,12 @@ export default function Navbar() {
   return (
     <div >
       <div className={styles.navbar}>
-        <h1 className="text-4xl font-semibold text-white">Tavra</h1>
-        <div className={styles.button} onClick={()=>(setIsActive(!isActive))}>
-           <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}>
-           </div>
+        <h1 className="text-4xl BigFont font-semibold text-[#fde7cc]"><Link href="/landing">Tavra</Link></h1>
+        <div className="flex justify-center item-center "> <h1 className=" mt-4 text-[#fde7cc] text-2xl font-bold">MENUE</h1>
+          <div className={styles.button} onClick={()=>(setIsActive(!isActive))}>
+            <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}>
+            </div>
+          </div>
         </div>
       </div>
       <div className={` ${isActive ? styles.backgroundOverlayActive : styles.backgroundOverlayInactive}`}>
