@@ -1,13 +1,6 @@
-import React from 'react'
+// app/page.tsx
+import { redirect } from "next/navigation";
 
-const page = () => {
-  return (
-    <div className=''>
-      <h1>
-        Hello, Welcome to Tavra
-      </h1>
-    </div>
-  )
+export default function Home() {
+  redirect("/landing");
 }
-
-export default page
