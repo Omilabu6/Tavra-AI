@@ -51,3 +51,6 @@ background: linear-gradient(135deg, #0f0f10 0%, #1c1c24 40%, #0a0a0d 100%);
 width: 100%;
 clip-path:polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 5% 100%, 0% 95% )
 }
+.Box:hover{
+  background: linear-gradient(135deg, #B5E48C, #99D98C, #D9ED92);
+}

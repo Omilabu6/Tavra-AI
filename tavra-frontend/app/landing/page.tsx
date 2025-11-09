@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Parallax, ParallaxLayer } from  "@react-spring/parallax";
 import LearnFaster from '../components/LearnFaster';
 import Paragraph from '../components/Paragraph/Paragraph';
+import Features from '../components/Features/Features';
 
 
 const Homepage = () => {
@@ -52,7 +53,10 @@ const Homepage = () => {
       </div>
       <div className='bg-[#fde7cc] py-30'>
        <Paragraph />
-       </div>
+      </div>
+      <div>
+        <Features />
+      </div>
     </div>
   )
 }
