@@ -28,7 +28,7 @@ export default function Features() {
       id: 2,
       title: "Personalized Roadmaps",
       description: "No more one-size-fits-all courses. Tavra understands your goals and skill level, then creates a customized roadmap that outlines exactly what to learn and in what order. Whether you're starting with web development, data science, or AI, Tavra designs a step-by-step path made just for you.",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop"
+      image: "/roadmap.png"
     },
     {
       id: 3,
