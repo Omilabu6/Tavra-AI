@@ -5,6 +5,8 @@ import { Parallax, ParallaxLayer } from  "@react-spring/parallax";
 import LearnFaster from '../components/LearnFaster';
 import Paragraph from '../components/Paragraph/Paragraph';
 import Features from '../components/Features/Features';
+import Discover from '../components/Discover';
+import Future from '../components/Future';
 
 
 const Homepage = () => {
@@ -56,6 +58,12 @@ const Homepage = () => {
       </div>
       <div>
         <Features />
+      </div>
+      <div>
+        <Discover />
+      </div>
+      <div>
+        <Future />
       </div>
     </div>
   )

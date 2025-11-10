@@ -1,22 +1,94 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import React, { useRef } from 'react';
-import styles from './Paragraph.module.scss';
+import React, { useRef } from "react";
+import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
+import styles from "./Paragraph.module.scss";
 
-export default function Paragraph() {
-
-  const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start 0.9", "start 0.25"]
-  })
+export default function AnimatedIntro() {
+  const text =
+    "Your best mentor to learn any programming language of your choice, helping you grow from beginner to expert through interactive guidance and AI-powered learning.";
 
   return (
-    <motion.p 
-      ref={container}         
-      className={styles.paragraph}
-      style={{opacity: scrollYProgress}}
+    <section
+      style={{
+        height: "100vh", // gives space to scroll
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "#fde7cc",
+      }}
     >
-      Your best mentor to learn any programming language of your choice, helping you grow from beginner to expert through interactive guidance and AI-powered learning.
-    </motion.p>
-  )
+      <Paragraph paragraph={text} />
+    </section>
+  );
+}
+
+interface ParagraphProps {
+  paragraph: string;
+}
+
+function Paragraph({ paragraph }: ParagraphProps) {
+  const container = useRef<HTMLParagraphElement | null>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start 0.9", "start 0.25"],
+  });
+
+  const words = paragraph.split(" ");
+
+  return (
+    <p ref={container} className={styles.paragraph}>
+      {words.map((word, i) => {
+        const start = i / words.length;
+        const end = start + 1 / words.length;
+        return (
+          <Word key={i} progress={scrollYProgress} range={[start, end]}>
+            {word}
+          </Word>
+        );
+      })}
+    </p>
+  );
+}
+
+interface WordProps {
+  children: string;
+  progress: MotionValue<number>;
+  range: [number, number];
+}
+
+function Word({ children, progress, range }: WordProps) {
+  const amount = range[1] - range[0];
+  const step = amount / children.length;
+
+  return (
+    <span className={styles.word}>
+      {children.split("").map((char, i) => {
+        const start = range[0] + i * step;
+        const end = range[0] + (i + 1) * step;
+        return (
+          <Char key={`c_${i}`} progress={progress} range={[start, end]}>
+            {char}
+          </Char>
+        );
+      })}
+      &nbsp;
+    </span>
+  );
+}
+
+interface CharProps {
+  children: string;
+  progress: MotionValue<number>;
+  range: [number, number];
+}
+
+function Char({ children, progress, range }: CharProps) {
+  const opacity = useTransform(progress, range, [0, 1]);
+
+  return (
+    <span className="">
+      <span className={styles.shadow}>{children}</span>
+      <motion.span style={{ opacity }}>{children}</motion.span>
+    </span>
+  );
 }

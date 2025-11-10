@@ -34,19 +34,19 @@ export default function Features() {
       id: 3,
       title: "Interactive Challenges",
       description: "Learning with Tavra is active, not passive. After each topic, you get hands-on quizzes and coding challenges that test what you’ve learned. Tavra gives instant feedback so you can understand mistakes and improve faster.",
-      image: "https://images.unsplash.com/photo-1511497584788-876760111969?w=400&h=300&fit=crop"
+      image: "/challenges.png"
     },
     {
       id: 4,
       title: "Instant Explanations",
       description: "When you’re stuck or confused, Tavra explains complex topics in simple, relatable ways — just like a human tutor. Whether it’s debugging an error or understanding a new concept, you’ll always get clear answers instantly.",
-      image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&h=300&fit=crop"
+      image: "/support.png"
     },
     {
       id: 5,
       title: "Progress Tracking",
       description: "Tavra tracks your learning progress intelligently, adapting the difficulty and pace based on your growth. It helps you see how far you’ve come, what areas you’re strong in, and what to improve next — turning learning into a continuous journey of progress.",
-      image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=400&h=300&fit=crop"
+      image: "/progres.png"
     }
   ];
 
@@ -69,11 +69,11 @@ export default function Features() {
               onMouseLeave={() => setHoveredItem(null)}
               onMouseMove={handleMouseMove}
             >
-              <div className=" flex  justify-between items-center border-2 Box border-black rounded-3xl p-15 cursor-pointer transition-all duration-300 hover:scale-[1.02]">
-                <h2 className="text-8xl font-semibold  mb-2">
+              <div className=" flex gap-20 justify-between items-center border-2 Box border-black rounded-4xld p-15 cursor-pointer transition-all duration-300 hover:scale-[1.02]">
+                <h2 className="text-6xl font-semibold  mb-2">
                   {item.title}
                 </h2>
-                <p className="text-2xl w-[600px]">
+                <p className="text-xl w-[600px]">
                   {item.description}
                 </p>
               </div>
@@ -98,10 +98,11 @@ export default function Features() {
               alt=""
               className="w-80 h-60 object-cover rounded-lg shadow-2xl border-2 border-slate-600"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-lg"></div>
+            <div className="absolute inset-0  from-black/40 to-transparent rounded-lg"></div>
           </div>
         </div>
       )}
     </div>
   );
 }
+
