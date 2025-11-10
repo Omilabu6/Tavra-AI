@@ -17,7 +17,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className={` ${isActive ? styles.backgroundOverlayActive : styles.backgroundOverlayInactive}`}>
+      <div onClick={()=>(setIsActive(!isActive))} className={` ${isActive ? styles.backgroundOverlayActive : styles.backgroundOverlayInactive}`}>
         <nav className={`${styles.navlinks} ${isActive ? styles.navlinksActive : styles.navlinksInactive}`}>
           <div className="flex items-center gap-10 px-5 "><span className="text-lg">01</span><h1 className="text-6xl px-6"><Link href="/landing">Home</Link></h1></div>
           <div className="flex items-center gap-10 px-5"><span className="text-lg">02</span><h1 className="text-6xl px-6"><Link href="/landing/about">About</Link></h1></div>
