@@ -51,7 +51,7 @@ const Discover = () => {
   }, []);
 
   return (
-    <div ref={container} className="text-black bg-[#fde7cc] pt-50">
+    <div ref={container} className="text-black bg-[#fde7cc] py-50">
       <h1 className="text-xl font-semibold py-20 text-center">Discover the flow</h1>
 
       <div className="md:block  hidden relative w-full h-full">

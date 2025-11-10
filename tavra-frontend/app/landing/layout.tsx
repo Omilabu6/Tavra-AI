@@ -10,7 +10,9 @@ export default function LandingLayout({
     <section >
       <Navbar />
        {children}
-      <Footer />
+      <div className="sticky bottom-0 -z-10">
+       <Footer />
+      </div>
     </section>
   );
 }

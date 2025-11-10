@@ -28,6 +28,7 @@ const Scale = () => {
 
   return (
     <div
+     className=''
       ref={container}
       style={{
         height: '200vh',
@@ -98,7 +99,7 @@ const Scale = () => {
               style={{
                 fontSize: 'clamp(4em, 7vw, 6em)',
                 fontWeight: '700',
-                color: 'white',
+                color: '#fde7cc',
                 textShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
               }}
               className='BigFont'
@@ -110,7 +111,7 @@ const Scale = () => {
                 fontSize: 'clamp(2em, 2vw, 1.3em)',
                 marginBottom: '5.5em',
                 fontWeight: '400',
-                color: 'rgba(255, 255, 255, 0.9)',
+                color: '#fde7cc',
                 textShadow: '0 2px 10px rgba(0, 0, 0, 0.5)',
                 maxWidth: '50vw',
               }}
