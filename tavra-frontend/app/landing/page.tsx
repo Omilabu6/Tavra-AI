@@ -31,7 +31,7 @@ const Homepage = () => {
                 </div>
               </div>
               <ParallaxLayer offset={0} speed={0.5}>
-              <h2 className='absolute top-[50%] right-5 w-[30%]  text-lg'>Your AI Partner for the Future designed to revolutionize how you learn, build, and grow in tech. Tavra AI blends human creativity with artificial intelligence to give you a mentor that understands your goals, guides your journey, and helps you reach your full potential.”Learn faster, build smarter, on any device</h2>
+              <h2 className='absolute top-[50%] right-5 w-[30%]  text-lg'>Your AI Partner for the Future designed to revolutionize how you learn, build, and grow in tech. Tavra AI blends human creativity with artificial intelligence to give you a mentor that understands your goals, guides your journey, and helps you reach your full potential.</h2>
               </ParallaxLayer>
                 <div className='flex  justify-between  aligh-end text-xl px-10 '>
                   <h1 className='  px-5'>Scroll down to discover more</h1>
