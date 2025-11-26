@@ -1,18 +1,63 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
 
-export default function Navbar() {
+export default function Navbar({variant}: {variant: string}) {
  const [isActive, setIsActive] = useState(false);
+ const[scrolled, setScrolled] = useState(false)
+ const [scrollDirection, setScrollDirection] = useState("up");
+
+
+ useEffect(() => {
+  let lastScrollY = window.scrollY;
+
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 170);
+
+
+    if (window.scrollY > lastScrollY) {
+      setScrollDirection("down"); 
+    } else {
+      setScrollDirection("up");   
+    }
+
+    lastScrollY = window.scrollY;
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   return (
-    <div >
-      <div className={styles.navbar}>
-        <h1 className="text-4xl BigFont font-semibold text-[#fde7cc]"><Link href="/landing">Tavra</Link></h1>
-        <div className="flex justify-center item-center "> <h1 className=" mt-4 text-[#fde7cc] text-2xl font-bold">MENUE</h1>
-          <div className={styles.button} onClick={()=>(setIsActive(!isActive))}>
-            <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}>
+    <div  >
+      <div className={`${styles.navbar} 
+          ${variant === "home"
+            ? scrolled
+              ? "bg-white text-black shadow-lg"
+              : "bg-transparent text-[#fde7cc]"
+            : variant === "about"
+            ? "text-black"
+            : "text-[#fde7cc]"
+          }
+          transition-transform duration-500
+          ${variant === "home" && scrolled
+            ? scrollDirection === "down"
+              ? "-translate-y-full"
+              : "translate-y-0"
+            : "translate-y-0"
+          }
+        `}>
+        <h1 className="text-4xl BigFont font-semibold "><Link href="/landing">Tavra</Link></h1>
+        <div className="flex justify-center item-center "> <h1 onClick={()=>(setIsActive(!isActive))} className=" mt-4 cursor-pointer text-2xl font-bold">MENUE</h1>
+          <div className={`${styles.button} `} onClick={()=>(setIsActive(!isActive))}>
+            <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}
+              ${variant==="home" ? styles.burgerHome: 
+              variant==="about" ?styles.burgerAbout : 
+               variant==="contact"? styles.burgerContact:
+               styles.burgerDefault  
+            }`}>
             </div>
           </div>
         </div>

@@ -3,9 +3,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  position: absolute;
+  top: 0;
+left: 0;
+  position: fixed;
    z-index: 50;
-   padding: 1.5em 1.5em;
+   padding: 1em;
   // height: 120px;
   // background-color: rgba(0, 0, 0, 0.5);
   // backdrop-filter: blur(24px);
@@ -27,6 +29,18 @@
   justify-content: center;
   cursor: pointer;
   
+ .burgerHome::before,
+    .burgerHome::after{ 
+      background-color:#fde7cc;
+    }
+     .burgerAbout::before,
+    .burgerAbout::after{ 
+      background-color:#000000;
+    }
+     .burgerContact::before,
+    .burgerContact::after{ 
+      background-color:#fde7cc;
+    }
   .burger {
     position: relative;
     width: 30px;
@@ -40,12 +54,11 @@
       position: absolute;
       left: 0;
       width: 100%;
-      height: 2px;
-      background-color:#fde7cc;
+      height: 3px;
       border-radius: 2px;
       transition: all 0.4s ease;
     }
-
+   
     &::before {
       top: -5px;
     }

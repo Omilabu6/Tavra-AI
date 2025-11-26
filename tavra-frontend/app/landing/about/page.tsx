@@ -1,23 +1,31 @@
 // pages/about.jsx
 
 import React from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white text-gray-800 py-20 px-6 md:px-16 lg:px-24">
-      <div className="max-w-5xl mx-auto text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-          About Tavra AI
-        </h1>
-        <p className="text-lg md:text-xl text-gray-600">
-          Reimagining the way the world learns technology — one intelligent conversation at a time.
-        </p>
+    <section className="bg-[#fde7cc] py-20 px-10 ">
+      <div className=" mb-16 h-screen">
+        <h1 className="text-[7.5rem] pt-10 font-bold">WE ARE ALL ABOUT EDUCATION</h1>
+        <div className='flex mt-20 justify-between  aligh-end text-xl px-1 '>
+          <h1 className='font-semibold  px-5'>Scroll down to discover more</h1>
+          <div className='  right-4'>
+          <Image 
+              src="/arrowRight.svg" 
+              alt="Arrow Down" 
+              width={44}
+              height={44}
+              className=' rotate-90'
+            />
+          </div>
+        </div>
       </div>
 
       <div className="space-y-16 text-left">
         {/* Vision */}
         <div>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-3">Our Vision</h2>
+          <h2 className="text-2xl text-center font-semibold text-gray-900 mb-3">Our Journey</h2>
           <p className="text-gray-700 leading-relaxed">
             To make <span className="font-semibold">learning technology as natural as having a conversation.</span> 
             We believe everyone deserves a personal mentor who understands their pace, adapts to their goals, 

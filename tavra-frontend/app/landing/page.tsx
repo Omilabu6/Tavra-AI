@@ -44,7 +44,7 @@ const Homepage = () => {
                       className='animate-bounce'
                     />
                   </div>
-                  </div>
+                 </div>
             </div>
            
           </div>
