@@ -1,7 +1,11 @@
-// pages/about.jsx
+"use client";
 
 import React from "react";
 import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+import FAQ from "@/app/landing/about/FAQ";
+
 
 export default function About() {
   return (
@@ -37,7 +41,47 @@ export default function About() {
                <div className="border-2 w-[450px] h-[400px] rounded-2xl"></div>
              </div>
           </div>
+          <div className="w-[100%]">
+            <Scale />
+          </div>
+          <div>
+            <h3>The features we wan to build </h3>
+            <h2>Tavra is not just any app , it's the new anthem.It's more than a platform</h2>
+          </div>
+          <div className="h-100vh">
+
+          </div>
+          <div>
+            <FAQ />
+          </div>
       </div>
     </section>
   );
 }
+
+
+
+
+const Scale = () => {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start start', 'end end']
+  });
+  const scale4 = useTransform(scrollYProgress, [0, 1], [1, 2]);
+
+  return (
+    <div ref={container} className="container">
+      <div className="sticky_">
+        <div className="element">
+          <motion.div style={{ scale: scale4 }} className="videoContainer">
+            <div className="h-[50vh] flex flex-col justify-center items-center text-center text-[#fde7cc] background clip-path-page  w-[500px] border-2">
+               <h1 className="text-4xl ">"OUR MISSION IS TO EMPOWER MILLONS OF LEGACIS"</h1>
+               <h2>We want to build real world tech skills that actually help people grow</h2>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  );
+};

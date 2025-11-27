@@ -118,3 +118,9 @@ border-radius: 10px;
 }
 }
 /* end of Zoom Parallax effect */
+
+
+.clip-path-page {
+  clip-path: polygon(0% 25%, 2% 0%, 98% 0% ,100% 25%, 100% 75%, 98% 100%, 2% 100%, 0% 75%);
+
+}
