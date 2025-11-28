@@ -58,14 +58,13 @@ clip-path:polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 5% 100%, 0% 95% )
 
 /* Zoom Parallax effect */
 .container {
-height: 200vh;
+height: 300vh;
 position: relative;
 justify-content: center;
 align-content: center;
 display: flex;
 width: 100%;
 margin: auto;
-
 }
 
 .sticky_ {
@@ -73,6 +72,7 @@ position: sticky;
 height: 100vh;
 width: 100vw;
 top: 12em;
+
 }
 
 .element {
@@ -119,8 +119,6 @@ border-radius: 10px;
 }
 /* end of Zoom Parallax effect */
 
-
-.clip-path-page {
-  clip-path: polygon(0% 25%, 2% 0%, 98% 0% ,100% 25%, 100% 75%, 98% 100%, 2% 100%, 0% 75%);
-
+.Black-bg{
+  background: linear-gradient(135deg, #0f0f10 0%, #1c1c24 40%, #0a0a0d 100%);
 }

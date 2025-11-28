@@ -31,7 +31,7 @@ export default function About() {
             <h2 className="text-2xl text-center font-semibold text-gray-900 mb-1">Our Journey</h2>
             <div className=" justify-center flex items-center"><span className="h-1 w-17 rounded-2xl bg-black"></span></div>
           </div>
-          <div className=" max-w-6xl mx-auto">
+          <div className=" max-w-6xl mb-60 mx-auto">
              <p className="text-xl w-[25em]">Our journey started from a shared experience: we watched friends and classmates struggle through scattered tutorials, confusing docs, and no one to ask when they were stuck. We wanted something different a learning companion that listens, adapts, and teaches through real conversation.</p>
              <div className=" flex justify-end mb-20">
                <div className="border-2 w-[450px] h-[400px] rounded-2xl"></div>
@@ -41,7 +41,7 @@ export default function About() {
                <div className="border-2 w-[450px] h-[400px] rounded-2xl"></div>
              </div>
           </div>
-          <div className="w-[100%]">
+          <div className=" ">
             <Scale />
           </div>
           <div>
@@ -68,16 +68,16 @@ const Scale = () => {
     target: container,
     offset: ['start start', 'end end']
   });
-  const scale4 = useTransform(scrollYProgress, [0, 1], [1, 2]);
+  const scale4 = useTransform(scrollYProgress, [0, 1], [2, 2.5]);
 
   return (
     <div ref={container} className="container">
       <div className="sticky_">
-        <div className="element">
+        <div className="element flex justify-center items-center pl-45">
           <motion.div style={{ scale: scale4 }} className="videoContainer">
-            <div className="h-[50vh] flex flex-col justify-center items-center text-center text-[#fde7cc] background clip-path-page  w-[500px] border-2">
-               <h1 className="text-4xl ">"OUR MISSION IS TO EMPOWER MILLONS OF LEGACIS"</h1>
-               <h2>We want to build real world tech skills that actually help people grow</h2>
+            <div className="h-[50vh]  flex flex-col Black-bg rounded-2xl justify-center items-center text-center  text-[#fde7cc]  w-[500px] border-2">
+               <h1 className="text-2xl w-[300px] ">"OUR MISSION IS TO EMPOWER MILLONS OF LEGACIS"</h1>
+               <h2 className="text-xs translate-y-10">We want to build real world tech skills that actually help people grow</h2>
             </div>
           </motion.div>
         </div>
