@@ -20,7 +20,7 @@ export default function Features() {
   const items: Item[] = [
     {
       id: 1,
-      title: "AI MENTOR",
+      title: "AI Mentor",
       description: "Tavra AI is your personal guide in the world of technology. Instead of watching endless videos or reading tutorials, you talk to Tavra like a real mentor — ask questions, seek advice, and learn through meaningful, interactive conversations. It’s like having a senior developer by your side 24/7.",
       image: "/mentor.png"
     },
@@ -69,13 +69,16 @@ export default function Features() {
               onMouseLeave={() => setHoveredItem(null)}
               onMouseMove={handleMouseMove}
             >
-              <div className=" flex gap-20 justify-between items-center border-2 Box border-black rounded-4xld p-15 cursor-pointer transition-all duration-300 hover:scale-[1.02]">
-                <h2 className="text-6xl font-semibold  mb-2">
-                  {item.title}
-                </h2>
-                <p className="text-xl w-[600px]">
-                  {item.description}
-                </p>
+              <div className='flex justify-between items-center gap-20  border-2 Box border-black rounded-4xld py-5 px-10 cursor-pointer transition-all duration-300 hover:scale-[1.02]'>
+                <h1 className='text-[10em] font-semibold'> {item.id}</h1>
+                <div className=" w-[42em] flex-col flex gap-5 ">
+                  <h2 className="text-4xl font-semibold  mb-2">
+                    {item.title}
+                  </h2>
+                  <p className="text-">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
