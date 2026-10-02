@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 
 const Discover = () => {
-  const pathRef = useRef(null);
-  const container = useRef(null);
+  const pathRef = useRef<SVGPathElement | null>(null);
+  const container = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({
     target: container,
@@ -110,10 +110,10 @@ const Discover = () => {
           <div className="p-20 bg-black rounded-3xl mb-6"></div>
           <h1 className="text-2xl font-bold">
             Test & Improve
-            </h1>
+          </h1>
           <h2 className="text-xl">
-           Take quizzes, solve mini-projects, and get feedback that helps you improve faster.
-           </h2>
+            Take quizzes, solve mini-projects, and get feedback that helps you improve faster.
+          </h2>
         </div>
 
         <div className="flex flex-col  justify-end mr-30 items-end">
@@ -121,7 +121,7 @@ const Discover = () => {
             <div className="p-20 bg-black rounded-3xl mb-6"></div>
             <h1 className="text-2xl font-bold">
               Track Your Progress
-              </h1>
+            </h1>
             <h2 className="text-xl">
               Tavra keeps track of your goals, achievements, and skill growth all powered by AI.
             </h2>
